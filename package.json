@@ -24,7 +24,7 @@
     "dockerfile",
     "tree-sitter"
   ],
-  "author": "",
+  "author": "WharfLab",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
