@@ -1,6 +1,6 @@
 {
   "name": "ast-grep-lang-dockerfile",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ast-grep language support for Dockerfile",
   "main": "index.js",
   "scripts": {
