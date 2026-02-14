@@ -8,7 +8,7 @@
     "source": "node nursery.js source",
     "prepublishOnly": "node nursery.js source",
     "postinstall": "node postinstall.js",
-    "test": "node nursery.js test"
+    "test": "node smoke-test.js"
   },
   "files": [
     "index.js",
