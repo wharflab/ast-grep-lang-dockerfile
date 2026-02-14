@@ -1,0 +1,46 @@
+name: Publish package
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: 'Dry run (skip publish)'
+        type: boolean
+        default: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Copy tree-sitter source
+        run: npm run source
+
+      - name: Build parser
+        run: npm run build
+
+      - name: Run tests
+        run: npm test
+
+      - name: Publish to npm
+        if: ${{ !inputs.dry-run }}
+        run: npm publish --provenance --access public
+
+      - name: Publish dry run
+        if: ${{ inputs.dry-run }}
+        run: npm publish --dry-run

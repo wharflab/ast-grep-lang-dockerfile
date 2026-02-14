@@ -1,0 +1,63 @@
+{
+  "name": "ast-grep-lang-dockerfile",
+  "version": "0.0.1",
+  "description": "ast-grep language support for Dockerfile",
+  "main": "index.js",
+  "scripts": {
+    "build": "tree-sitter build -o parser.so",
+    "source": "node nursery.js source",
+    "prepublishOnly": "node nursery.js source",
+    "postinstall": "node postinstall.js",
+    "test": "node nursery.js test"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "type.d.ts",
+    "postinstall.js",
+    "src",
+    "prebuilds"
+  ],
+  "keywords": [
+    "ast-grep",
+    "ast-grep-lang",
+    "dockerfile",
+    "tree-sitter"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wharflab/ast-grep-lang-dockerfile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wharflab/ast-grep-lang-dockerfile/issues"
+  },
+  "homepage": "https://github.com/wharflab/ast-grep-lang-dockerfile#readme",
+  "dependencies": {
+    "@ast-grep/setup-lang": "0.0.6"
+  },
+  "peerDependencies": {
+    "tree-sitter-cli": "0.25.8"
+  },
+  "peerDependenciesMeta": {
+    "tree-sitter-cli": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@ast-grep/cli": "^0.40.5",
+    "@ast-grep/nursery": "0.0.9",
+    "tree-sitter-cli": "0.25.8",
+    "tree-sitter-dockerfile": "github:camdencheek/tree-sitter-dockerfile"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "trustedDependencies": [
+    "tree-sitter",
+    "tree-sitter-cli",
+    "tree-sitter-dockerfile"
+  ]
+}
