@@ -46,7 +46,7 @@
     }
   },
   "devDependencies": {
-    "@ast-grep/cli": "^0.40.5",
+    "@ast-grep/cli": "^0.41.0",
     "@ast-grep/nursery": "0.0.9",
     "tree-sitter-cli": "0.26.5",
     "tree-sitter-dockerfile": "github:camdencheek/tree-sitter-dockerfile"
