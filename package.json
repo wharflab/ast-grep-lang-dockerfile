@@ -38,7 +38,7 @@
     "@ast-grep/setup-lang": "0.0.6"
   },
   "peerDependencies": {
-    "tree-sitter-cli": "0.26.5"
+    "tree-sitter-cli": "0.26.6"
   },
   "peerDependenciesMeta": {
     "tree-sitter-cli": {
@@ -48,7 +48,7 @@
   "devDependencies": {
     "@ast-grep/cli": "^0.40.5",
     "@ast-grep/nursery": "0.0.9",
-    "tree-sitter-cli": "0.26.5",
+    "tree-sitter-cli": "0.26.6",
     "tree-sitter-dockerfile": "github:camdencheek/tree-sitter-dockerfile"
   },
   "publishConfig": {
