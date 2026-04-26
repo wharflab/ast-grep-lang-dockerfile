@@ -3,5 +3,5 @@ customLanguages:
     libraryPath: parser.so
     extensions: [dockerfile]
     globs: ["**/Dockerfile", "**/Dockerfile.*"]
-    languageSymbol: tree_sitter_dockerfile
+    languageSymbol: tree_sitter_containerfile
     expandoChar: $

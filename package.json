@@ -49,7 +49,7 @@
     "@ast-grep/cli": "^0.42.0",
     "@ast-grep/nursery": "0.0.9",
     "tree-sitter-cli": "0.26.7",
-    "tree-sitter-dockerfile": "github:camdencheek/tree-sitter-dockerfile"
+    "tree-sitter-containerfile": "^0.5.0"
   },
   "publishConfig": {
     "access": "public",
@@ -58,6 +58,6 @@
   "trustedDependencies": [
     "tree-sitter",
     "tree-sitter-cli",
-    "tree-sitter-dockerfile"
+    "tree-sitter-containerfile"
   ]
 }
