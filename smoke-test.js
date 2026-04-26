@@ -37,7 +37,7 @@ if (!fs.existsSync(langModule.libraryPath)) {
   process.exit(1)
 }
 
-if (langModule.languageSymbol !== 'tree_sitter_dockerfile') {
+if (langModule.languageSymbol !== 'tree_sitter_containerfile') {
   console.error(`✗ Unexpected languageSymbol: ${langModule.languageSymbol}`)
   process.exit(1)
 }

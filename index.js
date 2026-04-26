@@ -26,6 +26,6 @@ module.exports = {
     return libPath;
   },
   extensions: ["Dockerfile", ".dockerfile"],
-  languageSymbol: 'tree_sitter_dockerfile',
+  languageSymbol: 'tree_sitter_containerfile',
   expandoChar: '$',
 }

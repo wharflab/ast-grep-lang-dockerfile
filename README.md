@@ -1,6 +1,6 @@
 # ast-grep-lang-dockerfile
 
-ast-grep language support for Dockerfile, using [tree-sitter-dockerfile](https://github.com/camdencheek/tree-sitter-dockerfile).
+ast-grep language support for Dockerfile, using [tree-sitter-containerfile](https://github.com/wharflab/tree-sitter-containerfile).
 
 ## Installation
 
@@ -19,7 +19,7 @@ customLanguages:
   dockerfile:
     libraryPath: node_modules/ast-grep-lang-dockerfile/parser.so
     extensions: [Dockerfile, .dockerfile]
-    languageSymbol: tree_sitter_dockerfile
+    languageSymbol: tree_sitter_containerfile
     expandoChar: $
 ```
 

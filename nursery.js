@@ -4,7 +4,7 @@ const languageRegistration = require('./index')
 setup({
   dirname: __dirname,
   name: 'dockerfile',
-  treeSitterPackage: 'tree-sitter-dockerfile',
+  treeSitterPackage: 'tree-sitter-containerfile',
   languageRegistration,
   testRunner: (parse) => {
     // add test here
