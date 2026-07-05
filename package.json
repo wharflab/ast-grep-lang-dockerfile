@@ -49,7 +49,7 @@
     "@ast-grep/cli": "^0.42.0",
     "@ast-grep/nursery": "0.0.9",
     "tree-sitter-cli": "0.26.8",
-    "tree-sitter-containerfile": "^0.8.0"
+    "tree-sitter-containerfile": "^0.9.0"
   },
   "publishConfig": {
     "access": "public",
