@@ -46,7 +46,7 @@
     }
   },
   "devDependencies": {
-    "@ast-grep/cli": "^0.42.0",
+    "@ast-grep/cli": "^0.45.0",
     "@ast-grep/nursery": "0.0.9",
     "tree-sitter-cli": "0.26.8",
     "tree-sitter-containerfile": "^0.8.0"
